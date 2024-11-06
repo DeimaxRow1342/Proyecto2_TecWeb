@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Futuristic</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        .menu{
+            width: 100%;
+            height: 8%;
+            margin-left: 3%;
+            border-top: 6%;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            /*flex: 1;*/
+            width: 12%;
+            padding: 10px;
+        }
+        .indice{
+            list-style: none;
+            display: flex; 
+            gap: 15px; 
+            padding: 0;
+            margin: 0;
+        }
+        .indice li {
+            display: inline;
+        }
+        .indice a {
+            text-decoration: none;
+            color: white;
+            font-size: 120%;
+            padding: 5px 10px;
+        }
+        .indice a:hover {
+            color: brown;
+        }
+        .entrada{
+            height: 100vh;
+            width: 100vw;
+            background-image: url('img/portada.jpg');
+            background-size: cover;
+        }
+        .entrada-izquierda{
+            height: 100vh;
+            width: 50%;
+            display: inline-block;
+            margin-left: 10%;
+        }
+        .elemento-separador{
+            height: 4px;
+            width: 15%;
+            margin-top: 18%;
+            background-color: white;
+            display: block;
+        }
+        .separador{
+            width: auto;
+            height: 16px;
+        }
+        .separador-grande{
+            width: auto;
+            height: 10%;
+        }
+        .slogan{
+            font-size: 74px;
+            color: white;
+            margin-top: 5%;
+            font-family: 'Oswald', sans-serif;
+        }
+        .mensaje-slogan{
+            font-size: 16px;
+            color: white;
+            width: 71%;
+            margin-top: 5%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        .enlace-portada{
+            display: inline-block;
+            font-weight: bold;
+            height: 6%;
+            border-radius: 30px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #fff;
+            border: none;
+            font-size: 90%;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px; 
+        }
+        .categorias{
+            height: 180vh;
+            width: 78vw;
+            margin-top: 6%;
+            margin-left: 11vw;
+            margin-right: 11vw;
+        }
+        .contenedor-categoria{
+            height: 47%;
+            display: flex;
+            gap: 16px;
+            flex-direction: row;
+        }
+        .categoria-1{
+            background-image: url('img/telefonos.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 49.2%;
+        }.categoria-2{
+            background-image: url('img/laptops.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 49.2%;
+        }.categoria-3{
+            background-image: url('img/camara.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 49.2%;
+        }.categoria-4{
+            background-image: url('img/audifonos-2.jpg');
+            background-size: cover;
+            height: 100%;
+            width: 49.2%;
+        }
+        .enlace-categoria{
+            display: inline-block;
+            margin-top: 80%;
+            margin-left: 10%;
+            height: 8%;
+            border-radius: 30px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #fff;
+            border: none;
+            font-size: 90%;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            text-decoration: none;
+            padding: 10px 20px; 
+        }
+        .banner-dirigido{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            height: 75vh;
+            width: 78vw;
+            margin-left: 11vw;
+            margin-right: 11vw;
+            font-family: 'Oswald', sans-serif;
+        }
+        .texto-banner-dirigido{
+            margin-left: 2%;
+        }
+        .banner-personal, .banner-profesional{
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+        .banner-personal{
+            margin-right: 3%;
+        }
+        .banner-profesional{
+            margin-left: 3%;
+        }
+        .banner-personal-imagen{
+            background-image: url('img/personal.png');
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .banner-profesional-imagen{
+            background-image: url('img/profesional.avif');
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .mas-vendidos{
+            height: 50vh;
+            width: 78vw;
+            margin-left: 11vw;
+            margin-right: 11vw;
+        }
+        .texto-productos{
+            font-family: 'Oswald', sans-serif;
+        }
+        .contenedor-items{
+            display: flex;
+            flex-direction: row;
+            height: 35vh;
+            width: 100%;
+            gap: 4%;
+        }
+        .item{
+            height: 100%;
+            width: 22%;
+        }
+        .texto-item{
+            height: 25%;
+            width: auto;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+        .producto-1{
+            height: 90%;
+            width: auto;
+            background-image: url('img/movil2.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .producto-2{
+            height: 90%;
+            width: auto;
+            background-image: url('img/camara3.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .producto-3{
+            height: 90%;
+            width: auto;
+            background-image: url('img/laptop3.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .producto-4{
+            height: 90%;
+            width: auto;
+            background-image: url('img/audio7.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .productos-en-venta{
+            height: 95vh;
+            width: 78vw;
+            margin-left: 11vw;
+            margin-right: 11vw;
+            text-align: center;
+        }
+        .titulo-iconos{
+            height: 5vh;
+            width: 100;
+        }
+        .contenedor-iconos{
+            height: 40vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 7%;
+        }
+        .icono{
+            height: 100%;
+            width: 19.76%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icono-imagen{
+            height: 40%;
+            width: 50%;
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .icono-imagen:hover {
+            transform: translateY(10px);
+        }
+        #icono-1{
+            background-image: url('img/laptop-icono.png');
+        }
+        #icono-2{
+            background-image: url('img/movil-icono.png');
+        }
+        #icono-3{
+            background-image: url('img/camara-icono.png');
+        }
+        #icono-4{
+            background-image: url('img/audifono-icono.png');
+        }
+        #icono-5{
+            background-image: url('img/mando-icono.png');
+        }
+        #icono-6{
+            background-image: url('img/impresora-icono.png');
+        }
+        #icono-7{
+            background-image: url('img/lavadora-icono.png');
+        }
+        #icono-8{
+            background-image: url('img/reloj-icono.png');
+        }
+        .titulo-icono{
+            margin: 0;
+        }
+        .formulario{
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .envio-formulario{
+            height: 15vh;
+        }
+        .enlace-formulario{
+            background-color: rgb(251,88,50);
+            color: white;
+            border-radius: 30px;
+            border: 0;
+        }
+        .footer {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-logo h2, .logo h2 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .redes {
+            margin-top: 10px;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        .footer-sobre {
+            flex: 2;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-sobre h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-sobre p {
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+
+        .footer-enlaces {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-enlaces h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-enlaces ul {
+            list-style: none;
+            padding: 0;
+            color: #b3b3b3;
+        }
+
+        .footer-enlaces a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .footer-enlaces a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-contacto {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-contacto h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-contacto p {
+            color: #b3b3b3;
+        }
+
+        .footer-copy {
+            text-align: center;
+            margin-top: 30px;
+            color: #6d6d6d;
+        }
+        .precio{
+            color: gray;
+        }
+        @media (max-width: 720px) {
+            .entrada-izquierda{
+                margin-left: 3%;
+            }
+            .entrada-izquierda {
+                width: 90%;       
+            }
+            .slogan{
+                font-size: 48px;
+            }
+            .contenedor-categoria, .banner-dirigido{
+                flex-direction: column;
+            }
+            .categoria-1, .categoria-2, .categoria-3, .categoria-4{
+                width: auto;
+            }
+            .enlace-categoria{
+                height: 12%;
+                width: 30%;
+                font-size: 60%;
+                display: inline-block;
+                margin-top: 40%; 
+            }
+            .banner-dirigido{
+                flex-direction: column;
+                height: 160vh;
+                width: 100vw;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .texto-banner-dirigido{
+                margin-left: 11vw;
+                margin-right: 11vw;
+            }
+            .banner-personal, .banner-profesional{
+                height: 80vh;
+                width: 78vw;
+                margin-left: 11vw;
+                margin-right: 11vw;
+            }
+            .mas-vendidos{
+                height: 115vh;
+            }
+            .contenedor-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4%;
+                height: 110vh;
+            }
+            .item {
+                height: 40%;
+                width: 48%;
+                height: auto;
+            }
+            .producto-1, .producto-2, .producto-3, .producto-4{
+                height: 70%;
+            }
+            .titulo-icono{
+                font-size: 16px;
+            }
+            .contenedor-iconos{
+                flex-wrap: wrap;
+            }
+            .icono{
+                width: 45%;
+                height: 50%;
+            }
+            .icono-imagen:hover {
+                transform: translateY(2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="entrada">
+        <div class="menu">
+            <div class="logo">
+                <h2>FUTURISTIC</h2>
+            </div>
+            <ul class="indice">
+                <li><a href="moviles.html">Moviles</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="audio.html">Audio</a></li>
+            </ul>
+        </div>
+        <div class="entrada-izquierda">
+            <div class="linea-separadora">
+                <span class="elemento-separador"></span>
+            </div>
+            
+            
+            <p class="slogan">
+                Lleva tu experiencia al siguiente nivel
+            </p>
+
+            <p class="mensaje-slogan">
+                Descubre nuestras últimas ofertas y productos innovadores, diseñados para hacer tu vida más fácil y emocionante.
+            </p>
+
+            <div class="separador"></div>
+            <div class="separador"></div>
+            
+            <button class="enlace-portada">COMIENZA</button>
+        </div>
+    </div>
+
+    <div class="categorias">
+        <h2>Categorias</h2>
+        <div class="separador"></div>
+        <div class="contenedor-categoria">
+            <div class="categoria-1">
+                <button class="enlace-categoria" onclick="window.location.href='moviles.html'">MÓVILES →</button>
+            </div>
+            <div class="categoria-2">
+                <button class="enlace-categoria" onclick="window.location.href='laptops.html'">LAPTOPS →</button>
+            </div>
+        </div>
+        <div class="separador"></div>
+        <div class="contenedor-categoria">
+            <div class="categoria-3">
+                <button class="enlace-categoria" onclick="window.location.href='video.html'">VIDEO →</button>
+            </div>
+            <div class="categoria-4">
+                <button class="enlace-categoria" onclick="window.location.href='audio.html'">AUDIO →</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="separador-grande"></div>
+
+    <div class="banner-dirigido">
+        <div class="texto-banner-dirigido">
+            <h1>Los mejores dispositivos para uso</h1>
+        </div>
+        <div class="banner-personal">
+            <div class="banner-personal-imagen"></div>
+            <div class="banner-profesional-texto">
+                <h2>Personal</h2>
+            </div>
+        </div>
+        <div class="banner-profesional">
+            <div class="banner-profesional-texto">
+                <h2>Profesional</h2>
+            </div>
+            <div class="banner-profesional-imagen"></div>
+        </div>
+    </div>
+
+    <div class="separador-grande"></div>
+
+    <div class="mas-vendidos">
+        <span class="texto-productos"><h3>Los productos más vendidos</h3></span>
+        <div class="separador"></div>
+        <div class="contenedor-items">
+            <div class="item" id="item-1">
+                <div class="producto-1"></div>
+                <div class="texto-item">
+                    <br>Samsung S24 Ultra
+                    <p class="precio">$1299</p>
+                </div>
+            </div>
+            <div class="item" id="item-2">
+                <div class="producto-2"></div>
+                <div class="texto-item">
+                    <br>GoPro Hero 9
+                    <p class="precio">$260</p>
+                </div>
+            </div>
+            <div class="item" id="item-3">
+                <div class="producto-3"></div>
+                <div class="texto-item">
+                    <br>Samsung Galaxy Book 4
+                    <p class="precio">$1599</p>
+                </div>
+            </div>
+            <div class="item" id="item-4">
+                <div class="producto-4"></div>
+                <div class="texto-item">
+                    <br>SoundCore Life Q30
+                    <p class="precio">$70</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="separador-grande"></div>
+
+    <div class="productos-en-venta">
+        <div head="titulo-iconos">
+            <h2>Explora la Colección</h2>
+        </div>
+        <div class="contenedor-iconos">
+            <div class="icono">
+                <div class="icono-imagen" id="icono-1"></div>
+                <span><h1 class="titulo-icono">Laptops</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-2"></div>
+                <span><h1 class="titulo-icono">Telefónos</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-3"></div>
+                <span><h1 class="titulo-icono">Cámaras</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-4"></div>
+                <span><h1 class="titulo-icono">Auriculares</h1></span>
+            </div>
+        </div>
+        <div class="contenedor-iconos">
+            <div class="icono">
+                <div class="icono-imagen" id="icono-5"></div>
+                <span><h1 class="titulo-icono">Videojuegos</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-6"></div>
+                <span><h1 class="titulo-icono">Impresoras</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-7"></div>
+                <span><h1 class="titulo-icono">Electrodomésticos</h1></span>
+            </div>
+            <div class="icono">
+                <div class="icono-imagen" id="icono-8"></div>
+                <span><h1 class="titulo-icono">Relojes</h1></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="formulario">
+        <div class="titulo-formulario">
+            <h2>Se el primero en saber</h2>
+        </div>
+
+        <div class="contenido-formulario">
+            Conoce todas las novedades y descuentos en la tienda
+        </div>
+
+        <div class="envio-formulario">
+            <input type="text" alt="Ingresa tu gmail">
+            <button class="enlace-formulario">SUSCRIBIRSE</button>
+        </div>
+    </div>
+
+    <div class="separador-grande"></div>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <h2>FUTURISTIC</h2>
+                <div class="redes">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-sobre">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>
+                    En Futuristic, nos apasiona ofrecerte lo último en tecnología para mejorar tu vida diaria. Con nuestra 
+                    amplia variedad y precios competitivos, en Futuristic encontrarás siempre lo que necesitas. ¡Tecnología avanzada,
+                    al alcance de todos!
+                </p>
+            </div>
+            
+            <div class="footer-enlaces">
+                <h3>Compra en Futuristic</h3>
+                <ul>
+                    <li><a href="moviles.html">Móviles</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-enlaces">
+                <h3>Sobre Futuristic</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contacto">
+                <h3>Obtenlo en Físico</h3>
+                <p>
+                    Cercado 123, 456 Cochabamba, Bolivia<br>
+                    Telefono: +591-72285670<br>
+                    futuristic.contact@gmail.com
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            <p>Copyright &copy; 2024 Tienda de Electrónicos</p>
+        </div>
+    </footer>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</body>
+</html>

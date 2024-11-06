@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <title>Audio</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .menu{
+            width: 100%;
+            height: 25%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+        .logo{
+            /*flex: 1;*/
+            width: 12%;
+            padding: 10px;
+        }
+        
+        .logo h2{
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .indice{
+            list-style: none;
+            display: flex; 
+            gap: 15px; 
+            padding: 0;
+            margin: 0;
+        }
+        .indice li {
+            display: inline;
+        }
+        .indice a {
+            text-decoration: none;
+            color: black;
+            font-size: 120%;
+            padding: 5px 10px;
+        }
+        .indice a:hover {
+            color: brown;
+        }
+        .enlace-logo {
+            display: block; 
+            height: 100%; 
+            width: 10%;
+            margin-left: 3%;
+        }
+        .productos{
+            background-color: rgb(247, 247, 247);
+        }
+        .contenedor-items{
+            display: flex;
+            flex-direction: row;
+            height: 45vh;
+            width: 78vw;
+            margin-left: 11vw;
+            margin-right: 11vw;
+            gap: 4%;
+        }
+        .item{
+            height: 100%;
+            width: 22%;
+        }
+        .texto-item{
+            height: 25%;
+            width: auto;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            margin-left: 10%;
+        }
+        .audio-1{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio1.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-2{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio2.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-3{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio3.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-4{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio4.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-5{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio5.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-6{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio6.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .audio-7{
+            height: 75%;
+            width: auto;
+            background-image: url('img/audio7.png');
+            background-size: contain;
+            background-repeat: no-repeat; 
+            background-position: center;
+            background-color: rgb(235, 235, 237);
+        }
+        .footer {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-logo h2{
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .redes {
+            margin-top: 10px;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        .footer-sobre {
+            flex: 2;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-sobre h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-sobre p {
+            color: #b3b3b3;
+            line-height: 1.6;
+        }
+
+        .footer-enlaces {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-enlaces h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-enlaces ul {
+            list-style: none;
+            padding: 0;
+            color: #b3b3b3;
+        }
+
+        .footer-enlaces a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .footer-enlaces a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-contacto {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px;
+        }
+
+        .footer-contacto h3 {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .footer-contacto p {
+            color: #b3b3b3;
+        }
+
+        .footer-copy {
+            text-align: center;
+            margin-top: 30px;
+            color: #6d6d6d;
+        }
+        .separador{
+            width: auto;
+            height: 16px;
+        }
+        .separador-grande{
+            width: auto;
+            height: 10vh;
+        }
+        .precio{
+            color: gray;
+        }
+        @media (max-width: 720px) {
+            .contenedor-items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 4%;
+                height: 110vh;
+            }
+            .item {
+                height: 40%;
+                width: 48%;
+                height: auto;
+            }
+            .audio-1, .audio-2, .audio-3, .audio-4, .audio-5, .audio-6, .audio-7{
+                height: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html" class="enlace-logo">
+            <div class="logo">
+                <h2>FUTURISTIC</h2>
+            </div>
+        </a>
+        <ul class="indice">
+            <li><a href="moviles.html">Moviles</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="audio.html">Audio</a></li>
+        </ul>
+    </div>
+
+    <div class="productos">
+        <div class="contenedor-items">
+            <div class="item" id="item-1">
+                <div class="audio-1"></div>
+                <div class="texto-item">
+                    <br> Nothing Ear
+                    <p class="precio">$299</p>
+                </div>
+            </div>
+            <div class="item" id="item-2">
+                <div class="audio-2"></div>
+                <div class="texto-item">
+                    <br>Apple AirPods 3
+                    <p class="precio">$499</p>
+                </div>
+            </div>
+            <div class="item" id="item-3">
+                <div class="audio-3"></div>
+                <div class="texto-item">
+                    <br>Samsung Galaxy Buds Live
+                    <p class="precio">$199
+                </div>
+            </div>
+            <div class="item" id="item-4">
+                <div class="audio-4"></div>
+                <div class="texto-item">
+                    <br>Samsung Galaxy Buds 2
+                    <p class="precio">$299</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+        <div class="separador"></div>
+        <div class="separador"></div>
+    
+        <div class="contenedor-items">
+            <div class="item" id="item-5">
+                <div class="audio-5"></div>
+                <div class="texto-item">
+                    <br>Sony WH-1000XM4
+                    <p class="precio">$280</p>
+                </div>
+            </div>
+            <div class="item" id="item-6">
+                <div class="audio-6"></div>
+                <div class="texto-item">
+                    <br>AirPods Max
+                    <p class="precio">$579</p>
+                </div>
+            </div>
+            <div class="item" id="item-7">
+                <div class="audio-7"></div>
+                <div class="texto-item">
+                    <br>SoundCore Life Q30
+                    <p class="precio">$70</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="separador-grande"></div>
+        <div class="separador-grande"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <h2>FUTURISTIC</h2>
+                <div class="redes">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-sobre">
+                <h3>SOBRE NOSOTROS</h3>
+                <p>
+                    En Futuristic, nos apasiona ofrecerte lo último en tecnología para mejorar tu vida diaria. Con nuestra 
+                    amplia variedad y precios competitivos, en Futuristic encontrarás siempre lo que necesitas. ¡Tecnología avanzada,
+                    al alcance de todos!
+                </p>
+            </div>
+            
+            <div class="footer-enlaces">
+                <h3>Compra en Futuristic</h3>
+                <ul>
+                    <li><a href="moviles.html">Móviles</a></li>
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-enlaces">
+                <h3>Sobre Futuristic</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contacto">
+                <h3>Obtenlo en Físico</h3>
+                <p>
+                    Cercado 123, 456 Cochabamba, Bolivia<br>
+                    Telefono: +591-72285670<br>
+                    futuristic.contact@gmail.com
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            <p>Copyright &copy; 2024 Tienda de Electrónicos</p>
+        </div>
+    </footer>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
