@@ -221,6 +221,36 @@
         .precio{
             color: gray;
         }
+        .formulario{
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .titulo-formulario h2{
+            font-size: 40px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .contenido-formulario{
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .envio-formulario{
+            height: 7vh;
+        }
+        .ingreso-formulario{
+            height: 100%;
+        }
+        .enlace-formulario{
+            height: 100%;
+            background-color: rgb(251,88,50);
+            color: white;
+            border-radius: 30px;
+            border: 0;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+        }
         @media (max-width: 720px) {
             .contenedor-items {
                 display: flex;
@@ -236,6 +266,13 @@
             }
             .camara-1, .camara-2, .camara-3, .camara-4{
                 height: 70%;
+            }
+            .indice{
+                margin-left: 33%;
+                font-size: 10px;
+            }
+            .indice a{
+                font-weight: bold;
             }
         }
     </style>
@@ -291,6 +328,23 @@
         <div class="separador-grande"></div>
     </div>
 
+    <div class="formulario">
+        <div class="titulo-formulario">
+            <h2>Se el primero en saber</h2>
+        </div>
+
+        <div class="contenido-formulario">
+            Conoce todas las novedades y descuentos en la tienda
+        </div>
+
+        <div class="envio-formulario">
+            <input type="text" class="ingreso-formulario">
+            <button class="enlace-formulario">SUSCRIBIRSE</button>
+        </div>
+    </div>
+
+    
+    <div class="separador-grande"></div>
 
     <footer class="footer">
         <div class="footer-contenido">

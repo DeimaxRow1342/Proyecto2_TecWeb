@@ -63,7 +63,6 @@
             margin-left: 11vw;
             margin-right: 11vw;
             gap: 4%;
-            margin-top: 5%;
         }
         .item{
             height: 100%;
@@ -77,7 +76,7 @@
             margin-left: 10%;
         }
         .movil-1{
-            height: 90%;
+            height: 75%;
             width: auto;
             background-image: url('img/movil1.png');
             background-size: contain;
@@ -86,7 +85,7 @@
             background-color: rgb(235, 235, 237);
         }
         .movil-2{
-            height: 90%;
+            height: 75%;
             width: auto;
             background-image: url('img/movil2.png');
             background-size: contain;
@@ -204,6 +203,36 @@
         .precio{
             color: gray;
         }
+        .formulario{
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .titulo-formulario h2{
+            font-size: 40px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .contenido-formulario{
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .envio-formulario{
+            height: 7vh;
+        }
+        .ingreso-formulario{
+            height: 100%;
+        }
+        .enlace-formulario{
+            height: 100%;
+            background-color: rgb(251,88,50);
+            color: white;
+            border-radius: 30px;
+            border: 0;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
+        }
         @media (max-width: 720px) {
             .contenedor-items {
                 display: flex;
@@ -219,6 +248,13 @@
             }
             .movil-1, .movil-2{
                 height: 70%;
+            }
+            .indice{
+                margin-left: 33%;
+                font-size: 10px;
+            }
+            .indice a{
+                font-weight: bold;
             }
         }
     </style>
@@ -259,6 +295,23 @@
         <div class="separador-grande"></div>
         <div class="separador-grande"></div>
     </div>
+
+    <div class="formulario">
+        <div class="titulo-formulario">
+            <h2>Se el primero en saber</h2>
+        </div>
+
+        <div class="contenido-formulario">
+            Conoce todas las novedades y descuentos en la tienda
+        </div>
+
+        <div class="envio-formulario">
+            <input type="text" class="ingreso-formulario">
+            <button class="enlace-formulario">SUSCRIBIRSE</button>
+        </div>
+    </div>
+
+    <div class="separador-grande"></div>
 
     <footer class="footer">
         <div class="footer-contenido">

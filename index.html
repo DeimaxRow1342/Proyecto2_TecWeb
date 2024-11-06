@@ -23,7 +23,6 @@
             align-items: center;
         }
         .logo{
-            /*flex: 1;*/
             width: 12%;
             padding: 10px;
         }
@@ -324,14 +323,28 @@
             flex-direction: column;
             gap: 10px;
         }
+        .titulo-formulario h2{
+            font-size: 40px;
+            font-family: 'Oswald', sans-serif;
+        }
+        .contenido-formulario{
+            font-size: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
         .envio-formulario{
-            height: 15vh;
+            height: 7vh;
+        }
+        .ingreso-formulario{
+            height: 100%;
         }
         .enlace-formulario{
+            height: 100%;
             background-color: rgb(251,88,50);
             color: white;
             border-radius: 30px;
             border: 0;
+            font-size: 16px;
+            font-family: 'Oswald', sans-serif;
         }
         .footer {
             background-color: #1c1c1c;
@@ -453,7 +466,6 @@
             }
             .enlace-categoria{
                 height: 12%;
-                width: 30%;
                 font-size: 60%;
                 display: inline-block;
                 margin-top: 40%; 
@@ -505,6 +517,13 @@
             }
             .icono-imagen:hover {
                 transform: translateY(2px);
+            }
+            .indice{
+                margin-left: 25%;
+                font-size: 10px;
+            }
+            .indice a{
+                font-weight: bold;
             }
         }
     </style>
@@ -676,7 +695,7 @@
         </div>
 
         <div class="envio-formulario">
-            <input type="text" alt="Ingresa tu gmail">
+            <input type="text" class="ingreso-formulario">
             <button class="enlace-formulario">SUSCRIBIRSE</button>
         </div>
     </div>
