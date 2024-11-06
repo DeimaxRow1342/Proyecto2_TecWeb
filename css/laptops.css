@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+}
+.menu{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.logo{
+    width: 12%;
+    padding: 10px;
+}
+.logo h2{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.indice{
+    list-style: none;
+    display: flex; 
+    gap: 15px; 
+    padding: 0;
+    margin: 0;
+}
+.indice li {
+    display: inline;
+}
+.indice a {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+    padding: 5px 10px;
+}
+.indice a:hover {
+    color: brown;
+}
+.enlace-logo {
+    display: block; 
+    height: 100%; 
+    width: 10%;
+    margin-left: 3%;
+}
+.productos{
+    background-color: rgb(247, 247, 247);
+}
+.contenedor-items{
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    width: 78vw;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    gap: 4%;
+}
+.item{
+    height: 100%;
+    width: 22%;
+}
+.texto-item{
+    height: 25%;
+    width: auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.laptop-1{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop1.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-2{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop2.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-3{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop3.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-4{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop4.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-5{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop5.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-6{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop6.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-7{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop7.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-8{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop8.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-9{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop9.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-10{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop10.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-11{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop11.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.laptop-12{
+    height: 75%;
+    width: auto;
+    background-image: url('img/laptop12.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-color: rgb(235, 235, 237);
+}
+.footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-logo h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.redes {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-sobre {
+    flex: 2;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-sobre h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-sobre p {
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+.footer-enlaces {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-enlaces h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-enlaces ul {
+    list-style: none;
+    padding: 0;
+    color: #b3b3b3;
+}
+
+.footer-enlaces a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+    text-decoration: underline;
+}
+
+.footer-contacto {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.footer-contacto h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.footer-contacto p {
+    color: #b3b3b3;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    color: #6d6d6d;
+}
+.separador{
+    width: auto;
+    height: 16px;
+}
+.separador-grande{
+    width: auto;
+    height: 10vh;
+}
+.precio{
+    color: gray;
+}.formulario{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.titulo-formulario h2{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.contenido-formulario{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.envio-formulario{
+    height: 7vh;
+}
+.ingreso-formulario{
+    height: 100%;
+}
+.enlace-formulario{
+    height: 100%;
+    background-color: rgb(251,88,50);
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 720px) {
+    .contenedor-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4%;
+        height: 110vh;
+    }
+    .item {
+        height: 40%;
+        width: 48%;
+        height: auto;
+    }
+    .laptop-1, .laptop-2, .laptop-3, .laptop-4, .laptop-5, .laptop-6, .laptop-7, .laptop-8, .laptop-9, .laptop-10, .laptop-11, .laptop-12{
+        height: 70%;
+    }
+    .indice{
+        margin-left: 33%;
+        font-size: 10px;
+    }
+    .indice a{
+        font-weight: bold;
+    }
+}
