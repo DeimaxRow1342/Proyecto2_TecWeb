@@ -313,16 +313,24 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 @media (max-width: 720px) {
+    .logo{
+        padding: 0;
+    }
+    .productos{
+        width: 100vw;
+    }
     .contenedor-items {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 4%;
+        margin-left: 10vw;
+        margin-right: 10vw;
         height: 110vh;
     }
     .item {
-        height: 40%;
-        width: 48%;
+        height: 30%;
+        width: 100%;
         height: auto;
     }
     .laptop-1, .laptop-2, .laptop-3, .laptop-4, .laptop-5, .laptop-6, .laptop-7, .laptop-8, .laptop-9, .laptop-10, .laptop-11, .laptop-12{
@@ -330,9 +338,10 @@ body{
     }
     .indice{
         margin-left: 33%;
-        font-size: 10px;
+        font-size: 9px;
     }
     .indice a{
         font-weight: bold;
+        padding: 0;
     }
 }

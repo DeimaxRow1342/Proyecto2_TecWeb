@@ -270,16 +270,24 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 @media (max-width: 720px) {
+    .logo{
+        padding: 0;
+    }
+    .productos{
+        width: 100vw;
+    }
     .contenedor-items {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 4%;
+        margin-left: 10vw;
+        margin-right: 10vw;
         height: 110vh;
     }
     .item {
         height: 40%;
-        width: 48%;
+        width: 100%;
         height: auto;
     }
     .audio-1, .audio-2, .audio-3, .audio-4, .audio-5, .audio-6, .audio-7{
@@ -287,9 +295,10 @@ body{
     }
     .indice{
         margin-left: 33%;
-        font-size: 10px;
+        font-size: 9px;
     }
     .indice a{
         font-weight: bold;
+        padding: 0;
     }
 }

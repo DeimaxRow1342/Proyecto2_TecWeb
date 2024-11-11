@@ -439,6 +439,13 @@ html, body{
     color: gray;
 }
 @media (max-width: 720px) {
+    .logo{
+        padding: 0;
+    }
+    .indice a{
+        font-weight: bold;
+        padding: 0;
+    }
     .entrada-izquierda{
         margin-left: 3%;
     }
@@ -489,7 +496,7 @@ html, body{
     }
     .item {
         height: 40%;
-        width: 48%;
+        width: 100%;
         height: auto;
     }
     .producto-1, .producto-2, .producto-3, .producto-4{
@@ -509,10 +516,13 @@ html, body{
         transform: translateY(2px);
     }
     .indice{
-        margin-left: 25%;
-        font-size: 10px;
+        margin-left: 33%;
+        font-size: 9px;
     }
     .indice a{
         font-weight: bold;
+    }
+    .mensaje-slogan{
+        color: black;
     }
 }
